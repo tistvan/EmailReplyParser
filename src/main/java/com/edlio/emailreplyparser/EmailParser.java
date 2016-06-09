@@ -29,7 +29,7 @@ public class EmailParser {
 	public EmailParser() {
 		compiledQuoteHeaderPatterns = new ArrayList<Pattern>();
 		quoteHeadersRegex.add("^(On\\s(.{1,500})wrote:)");
-		quoteHeadersRegex.add("írta[^\\n]*:");
+		quoteHeadersRegex.add("^[^\\n]+írta,\\s+<[^@]+@[^\\.]+\\.[^>]+>:");
 		quoteHeadersRegex.add("From:[^\\n]+\\n?([^\\n]+\\n?){0,2}To:[^\\n]+\\n?([^\\n]+\\n?){0,2}Subject:[^\\n]+");
 		quoteHeadersRegex.add("To:[^\\n]+\\n?([^\\n]+\\n?){0,2}From:[^\\n]+\\n?([^\\n]+\\n?){0,2}Subject:[^\\n]+");
 		maxParagraphLines = 6;
