@@ -2,8 +2,6 @@ package com.edlio.emailreplyparser;
 
 import static org.junit.Assert.*;
 
-import java.io.ObjectInputStream.GetField;
-
 import org.junit.Test;
 
 public class EmailReplyParserTest {
@@ -67,6 +65,12 @@ public class EmailReplyParserTest {
 	public void testUnquotedReply() {
 		assertEquals("This is my reply.", 
 				EmailReplyParser.parseReply(FixtureGetter.getFixture("email_unquoted_reply.txt")));
-	}	
+	}
+	
+	@Test
+	public void testHungarianGmailReply() {
+		assertEquals("\uFEFFTeszt válasz gmail 1", //FIXME that unicode character shouldn't be there
+				EmailReplyParser.parseReply(FixtureGetter.getFixture("email_gmail_hu.txt")));
+	}		
 	
 }

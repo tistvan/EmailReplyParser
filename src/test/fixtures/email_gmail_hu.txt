@@ -1,0 +1,17 @@
+﻿Teszt válasz gmail 1
+
+2016. június 9. 9:05 SilverFrog Hibrid 2 írta, <hibridteszt@gmail.com>:
+
+> 00006 <http://localhost:9000/client>  bejelentő teszt 3 test
+> Hozzászólás Takács István 2016.06.09. 09:05
+>
+> Tisztelt István Gmail teszt!
+>
+> A(z) test részéről 00006 számon rögzített bejelentéshez új hozzászólás
+> történt:
+>
+>    - nyilvános teszt 2
+>
+> Automatikus üzenet a Hibrid 2 rendszerből. Leiratkozáshoz kérjük,
+> módosítsa profilbeállításait.
+>
