@@ -69,7 +69,7 @@ public class EmailReplyParserTest {
 	
 	@Test
 	public void testHungarianGmailReply() {
-		assertEquals("\uFEFFTeszt válasz gmail 1", //FIXME that unicode character shouldn't be there
+		assertEquals("\uFEFFTeszt valasz gmail 1", //FIXME that unicode character shouldn't be there
 				EmailReplyParser.parseReply(FixtureGetter.getFixture("email_gmail_hu.txt")));
 	}		
 	
